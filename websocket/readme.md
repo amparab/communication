@@ -17,3 +17,5 @@ socket.onmessage = (event) => console.log("Received:", event.data);
 socket.onclose = () => console.log("Disconnected!");
 
 socket.onerror = (err) => console.error("Error:", err);
+```
+
