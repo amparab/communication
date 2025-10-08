@@ -9,7 +9,7 @@ const socket = new WebSocket("ws://localhost:8080/chat");
 socket.onopen = () => {
     console.log("Connected to server!");
     // You can send messages to the server using .send()
-    socket.send("Hello server!");
+    // socket.send("Hello server!");
 };
 
 socket.onmessage = (event) => console.log("Received:", event.data);
