@@ -19,3 +19,5 @@ socket.onclose = () => console.log("Disconnected!");
 socket.onerror = (err) => console.error("Error:", err);
 ```
 
+NOTE : The standard WebSocket upgrade mechanism doesn’t work reliably over HTTP/2, so browsers and servers often fall back to HTTP/1.1 for WebSockets.
+
