@@ -1,6 +1,6 @@
 ## WebSocket Client Example
 
-Once the Spring Boot WebSocket server is running on **`ws://localhost:8080/chat`**,  
+Once the Spring Boot WebSocket server is running on **`ws://localhost:8080`**,  
 a client can connect and communicate using plain JavaScript:
 
 ```javascript
