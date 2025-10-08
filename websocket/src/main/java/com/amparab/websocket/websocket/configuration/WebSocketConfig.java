@@ -1,4 +1,4 @@
-package com.amparab.communication.websocket.configuration;
+package com.amparab.websocket.websocket.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

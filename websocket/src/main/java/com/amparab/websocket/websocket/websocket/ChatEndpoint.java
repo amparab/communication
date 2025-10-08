@@ -1,4 +1,4 @@
-package com.amparab.communication.websocket.websocket;
+package com.amparab.websocket.websocket.websocket;
 
 import jakarta.websocket.*;
 import jakarta.websocket.server.ServerEndpoint;
@@ -49,7 +49,7 @@ public class ChatEndpoint {
     }
 
     /**
-     * Called when an error occurs during the WebSocket communication.
+     * Called when an error occurs during the WebSocket websocket.
      */
     @OnError
     public void onError(Session session, Throwable throwable) {

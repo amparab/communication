@@ -11,6 +11,7 @@
 	<groupId>com.amparab</groupId>
 	<artifactId>communication</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>communication</name>
 	<description>Project to demonstrate different ways of communication in systems</description>
 	<url/>
@@ -29,37 +30,19 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-websocket</artifactId>
-		</dependency>
-
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-		</dependency>
-
-
-	</dependencies>
+	<modules>
+		<module>websocket</module>
+	</modules>
+	<dependencyManagement>
+		<dependencies>
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
+		<pluginManagement>
+			<plugins>
+			</plugins>
+		</pluginManagement>
 	</build>
 
 </project>
