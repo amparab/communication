@@ -21,3 +21,7 @@ socket.onerror = (err) => console.error("Error:", err);
 
 NOTE : The standard WebSocket upgrade mechanism doesn’t work reliably over HTTP/2, so browsers and servers often fall back to HTTP/1.1 for WebSockets.
 
+## Use Cases
+- Chat/messaging apps (bi-directional)
+- Online games or multiplayer apps 
+- Collaborative tools (Google Docs-style editing)

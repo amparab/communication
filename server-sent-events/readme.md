@@ -25,3 +25,8 @@ console.error("Error:", err);
 
 `EventSource` is a built-in JavaScript object that allows the client (browser) to receive continuous event updates from a server.
 EventSource has built-in behaviour that even if the connection breaks (like server restarts, network issue, etc.), the browser automatically retries after a few seconds
+
+## Use Cases
+- Live dashboards (stock prices, analytics, IoT data)
+- News feed updates or logs
+- Real-time server metrics or progress updates

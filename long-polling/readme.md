@@ -38,3 +38,9 @@ curl -X POST -d "amrutap" http://localhost:8080/send
 ```
 
 You can see that the response is sent back to the client and then immediately the client sends a new request. The new request could be sent on the same TCP connection or a new one, depending on whether the previous connection is still alive (or closed due to network issue, server shutdown or timeout, etc.) and whether keep-alive or HTTP/2 is being used.
+
+## Use cases
+- Best for: Low-frequency updates, easy to implement
+- Notifications or alerts (when updates are infrequent)
+- Real-time data where WebSockets/SSE aren’t supported
+- Simple “push-like” updates over plain HTTP
