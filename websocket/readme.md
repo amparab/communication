@@ -18,6 +18,17 @@ socket.onclose = () => console.log("Disconnected!");
 
 socket.onerror = (err) => console.error("Error:", err);
 ```
+WebSocket starts as HTTP, but it uses a handshake upgrade:
+```
+GET /chat HTTP/1.1
+Upgrade: websocket
+Connection: Upgrade
+```
+Once the server replies:
+```
+HTTP/1.1 101 Switching Protocols
+```
+the client (ex. browser) flips the TCP socket from HTTP mode → WebSocket mode.
 
 NOTE : The standard WebSocket upgrade mechanism doesn’t work reliably over HTTP/2, so browsers and servers often fall back to HTTP/1.1 for WebSockets.
 
