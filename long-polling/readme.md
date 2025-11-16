@@ -12,7 +12,7 @@ This creates the illusion of “real-time” updates without constantly hammerin
 
 ## Long Polling Client Example
 
-Once the Spring Boot server is running on **`http://localhost:8080/`**, a client can connect using plain JavaScript:
+Once the Spring Boot server is running on **`http://localhost:8080/`**, a client can connect using plain JavaScript from the browser:
 
 ```javascript
 function poll() {
