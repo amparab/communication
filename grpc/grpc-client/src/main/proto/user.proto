@@ -1,0 +1,19 @@
+syntax = "proto3";
+package com.amparab.grpc_server;
+
+option java_multiple_files = true;
+option java_package = "com.amparab.grpc_server";
+option java_outer_classname = "UserProto";
+
+service UserService {
+  rpc GetUser(GetUserRequest) returns (GetUserResponse);
+}
+
+message GetUserRequest {
+  int32 id = 1;
+}
+
+message GetUserResponse {
+  int32 id = 1;
+  string name = 2;
+}
